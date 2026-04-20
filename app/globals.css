@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #e11d48; /* Rose-600: Ubah hex ini untuk ganti warna brand */
+  --color-primary-dark: #be123c; /* Rose-700 */
+  --color-secondary: #0f172a; /* Slate-900 */
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .container-custom {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50 text-slate-800 antialiased;
+}
