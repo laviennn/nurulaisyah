@@ -3,7 +3,7 @@ export const SITE_CONFIG = {
   description:
     'Tukar Limit ShopeePay Later, Boost PayFlex, dan Grab PayLater Anda Jadi Tunai dengan Cepat dan Aman.',
   url: 'https://www.cashoutservice.my',
-  waNumber: '601123589465', // GANTI NOMOR INI
+  waNumber: '601162297661', // GANTI NOMOR INI
 };
 
 export const WA_LINK = `https://wa.me/${SITE_CONFIG.waNumber}?text=Halo%20Admin,%20saya%20berminat%20tukar%20limit%20jadi%20tunai.`;
