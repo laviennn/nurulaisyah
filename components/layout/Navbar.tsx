@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X, DollarSign } from 'lucide-react';
 import Button from '@/components/ui/Button';
 import { SITE_CONFIG, WA_LINK } from '@/data/content';
@@ -26,22 +27,23 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-sm py-3'
-          : 'bg-transparent py-5'
-      }`}>
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
+        ? 'bg-white/90 backdrop-blur-md shadow-sm py-3'
+        : 'bg-transparent py-5'
+        }`}>
       <div className='container-custom flex items-center justify-between'>
         {/* Logo */}
         <Link
           href='/'
           className='flex items-center gap-2 font-bold text-2xl text-slate-900'>
-          <div className='bg-[var(--color-primary)] p-1.5 rounded-lg text-white'>
-            <DollarSign size={24} />
-          </div>
-          <span>
-            Cashout<span className='text-[var(--color-primary)]'>Service</span>
-          </span>
+          <Image
+            src='/images/logo-aina.png'
+            alt='AinaServices Logo'
+            width={180}
+            height={50}
+            className='object-contain h-24 w-auto'
+            priority
+          />
         </Link>
 
         {/* Desktop Menu */}

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { SITE_CONFIG } from '@/data/content';
 import { Instagram, Mail, MessageCircle } from 'lucide-react';
 
@@ -10,9 +11,15 @@ export default function Footer() {
       <div className='container-custom'>
         <div className='grid md:grid-cols-3 gap-8 mb-8'>
           <div>
-            <h3 className='text-xl font-bold text-white mb-4'>
-              {SITE_CONFIG.name}
-            </h3>
+            <div className='mb-4'>
+              <Image
+                src='/images/logo-aina.png'
+                alt='AinaServices Logo'
+                width={160}
+                height={45}
+                className='object-contain h-10 w-auto'
+              />
+            </div>
             <p className='text-sm opacity-80 max-w-xs'>
               {SITE_CONFIG.description}
             </p>

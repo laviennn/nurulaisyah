@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
   title: {
     default:
-      'CashoutService.my | Tukar Limit ShopeePay & Grab Jadi Tunai (Malaysia)',
+      'AinaServices.my | Tukar Limit ShopeePay & Grab Jadi Tunai (Malaysia)',
     template: `%s | ${SITE_CONFIG.name}`,
   },
   description:
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     'kuala lumpur',
     'selangor',
   ],
-  authors: [{ name: 'CashoutService Team', url: SITE_CONFIG.url }],
-  creator: 'CashoutService.my',
-  publisher: 'CashoutService.my',
+  authors: [{ name: 'AinaServices Team', url: SITE_CONFIG.url }],
+  creator: 'AinaServices.my',
+  publisher: 'AinaServices.my',
   formatDetection: {
     email: false,
     address: false,

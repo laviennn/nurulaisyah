@@ -47,7 +47,7 @@ export default function Hero() {
           className='relative h-[400px] md:h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl'>
           {/* PLACEHOLDER: Ganti src dengan /images/hero.jpg */}
           <Image
-            src='/images/hero.png'
+            src='/images/hero.jpg'
             alt='Happy customer using cashout service'
             fill
             className='object-cover'

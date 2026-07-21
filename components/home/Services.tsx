@@ -1,12 +1,13 @@
-import { SERVICES, WA_LINK } from '@/data/content';
+import { SERVICES, SERVICES_INFO, WA_LINK } from '@/data/content';
 import Button from '@/components/ui/Button';
-import { ShoppingBag, Zap, Car } from 'lucide-react';
+import Image from 'next/image';
+import { ShoppingBag, Zap, Car, CreditCard } from 'lucide-react';
 
-// Helper map untuk icon dinamis
 const iconMap = {
   ShoppingBag: ShoppingBag,
   Zap: Zap,
   Car: Car,
+  CreditCard: CreditCard,
 };
 
 export default function Services() {
@@ -16,11 +17,20 @@ export default function Services() {
       className='py-20 bg-slate-50'>
       <div className='container-custom'>
         <div className='text-center mb-16'>
-          <h2 className='text-3xl font-bold text-slate-900 mb-4'>
-            Layanan Kami
+          <h2 className='text-3xl font-bold text-slate-900 mb-6'>
+            {SERVICES_INFO.title}
           </h2>
+          <div className='flex justify-center mb-6'>
+            <Image
+              src='/images/logo-aina.png'
+              alt='AinaServices Logo'
+              width={160}
+              height={45}
+              className='object-contain h-12 w-auto'
+            />
+          </div>
           <p className='text-slate-600'>
-            Solusi pencairan untuk pelbagai platform
+            {SERVICES_INFO.desc}
           </p>
         </div>
 

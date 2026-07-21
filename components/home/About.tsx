@@ -1,4 +1,5 @@
 import { ABOUT_CONTENT, WHY_CHOOSE_US } from '@/data/content';
+import Image from 'next/image';
 import { CheckCircle2 } from 'lucide-react';
 
 export default function About() {
@@ -11,6 +12,15 @@ export default function About() {
           <h2 className='text-3xl font-bold text-slate-900 mb-6'>
             {ABOUT_CONTENT.title}
           </h2>
+          <div className='flex justify-center mb-6'>
+            <Image
+              src='/images/logo-aina.png'
+              alt='AinaServices Logo'
+              width={160}
+              height={45}
+              className='object-contain h-12 w-auto'
+            />
+          </div>
           <p className='text-slate-600 text-lg leading-relaxed'>
             {ABOUT_CONTENT.text}
           </p>
