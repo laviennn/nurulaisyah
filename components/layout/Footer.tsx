@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { SITE_CONFIG } from '@/data/content';
-import { Instagram, Mail, MessageCircle } from 'lucide-react';
+import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 
 export default function Footer() {
   return (
@@ -56,7 +56,7 @@ export default function Footer() {
               <a
                 href={`https://wa.me/${SITE_CONFIG.waNumber}`}
                 className='flex items-center gap-2 hover:text-white'>
-                <MessageCircle size={18} /> WhatsApp
+                <WhatsAppIcon size={18} /> WhatsApp
               </a>
             </div>
           </div>
