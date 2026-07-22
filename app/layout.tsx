@@ -87,6 +87,9 @@ export const metadata: Metadata = {
   verification: {
     google: 'isi-kode-verifikasi-google-console-disini', // Ganti nanti
   },
+  icons: {
+    icon: '/icon.jpeg',
+  },
 };
 
 export default function RootLayout({

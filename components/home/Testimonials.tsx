@@ -91,7 +91,7 @@ export default function Testimonials() {
             </div>
 
             <Image
-              src={`/images/testimoni/${id}.jpeg`}
+              src={`/images/testimoni/testi-${id}.jpeg`}
               alt={`Testimoni Pelanggan ${id}`}
               fill
               className='object-cover transition-transform duration-500 group-hover:scale-105'
@@ -137,7 +137,7 @@ export default function Testimonials() {
               onClick={(e) => e.stopPropagation()} // Mencegah klik pada gambar menutup lightbox
             >
               <Image
-                src={`/images/testimoni/${testimonials[selectedIndex]}.jpeg`}
+                src={`/images/testimoni/testi-${testimonials[selectedIndex]}.jpeg`}
                 alt='Testimoni Fullscreen'
                 fill
                 className='object-contain'
