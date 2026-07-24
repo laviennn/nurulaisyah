@@ -3,7 +3,7 @@ export const SITE_CONFIG = {
   description:
     'Tukar limit PayLater atau Kad Kredit kepada wang tunai dengan proses yang mudah, pantas dan selamat.',
   url: 'https://ainaservices.my',
-  waNumber: '601162297661', // GANTI NOMOR INI
+  waNumber: '60173669477', // GANTI NOMOR INI
 };
 
 export const WA_LINK = `https://wa.me/${SITE_CONFIG.waNumber}?text=Halo%20Admin,%20saya%20berminat%20tukar%20limit%20jadi%20tunai.`;
@@ -50,27 +50,27 @@ export const SERVICES = [
   {
     title: 'Shopee SPayLater',
     desc: 'Tukar limit anda kepada wang tunai',
-    icon: 'ShoppingBag',
+    logo: '/images/logo/shoppe.webp',
   },
   {
     title: 'Grab PayLater',
     desc: 'Tukar limit anda kepada wang tunai',
-    icon: 'Car',
+    logo: '/images/logo/grab.webp',
   },
   {
     title: 'Boost PayFlex',
     desc: 'Tukar limit anda kepada wang tunai',
-    icon: 'Zap',
+    logo: '/images/logo/boost.webp',
   },
   {
     title: 'RYT Bank',
     desc: 'Tukar limit anda kepada wang tunai',
-    icon: 'CreditCard',
+    logo: '/images/logo/ryt.webp',
   },
   {
     title: 'Atome Card & PayLater',
     desc: 'Tukar limit anda kepada wang tunai',
-    icon: 'CreditCard',
+    logo: '/images/logo/atome.png',
   },
 ];
 
