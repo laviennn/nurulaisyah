@@ -16,11 +16,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_CONFIG.url),
   title: {
     default:
-      'AinaServices.my | Tukar Limit ShopeePay & Grab Jadi Tunai (Malaysia)',
+      'Tukar Limit PayLater atau Kad Kredit Kepada Wang Tunai Dengan Mudah, Pantas & Selamat',
     template: `%s | ${SITE_CONFIG.name}`,
   },
   description:
-    'Perkhidmatan tukar limit ShopeePay Later (SPayLater), Grab PayLater, dan Boost PayFlex menjadi tunai segera. Proses pantas 5 minit, selamat, dan trusted di Malaysia.',
+    'Perlukan wang tunai dengan segera? Kami sedia membantu anda menukarkan limit PayLater Shopee, Grab, Boost, Atome atau Kad Kredit kepada wang tunai dengan proses yang mudah, pantas dan selamat',
   keywords: [
     'cashout shopeepay malaysia',
     'tukar limit shopeepay jadi tunai',
@@ -50,16 +50,16 @@ export const metadata: Metadata = {
   },
   // Open Graph (Tampilan saat link di-share di WhatsApp/Facebook)
   openGraph: {
-    title: 'Tukar Limit ShopeePay & Grab Jadi Tunai | Fast & Secure',
+    title: 'Tukar Limit PayLater atau Kad Kredit Kepada Wang Tunai Dengan Mudah, Pantas & Selamat',
     description:
-      'Perlukan tunai segera? Cairkan limit kredit SPayLater dan Grab anda sekarang. Rate terbaik dan proses pantas!',
+      'Perlukan wang tunai dengan segera? Kami sedia membantu anda menukarkan limit PayLater Shopee, Grab, Boost, Atome atau Kad Kredit kepada wang tunai dengan proses yang mudah, pantas dan selamat',
     url: SITE_CONFIG.url,
     siteName: SITE_CONFIG.name,
     locale: 'ms_MY',
     type: 'website',
     images: [
       {
-        url: '/images/og-image.jpg', // Pastikan buat gambar ukuran 1200x630px di folder public
+        url: '/images/og-image1.jpg', // Pastikan buat gambar ukuran 1200x630px di folder public
         width: 1200,
         height: 630,
         alt: 'Cashout Service Malaysia',

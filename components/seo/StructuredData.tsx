@@ -6,7 +6,7 @@ export default function StructuredData() {
     '@type': 'FinancialService',
     name: SITE_CONFIG.name,
     alternateName: 'Jasa Gestun Malaysia',
-    image: `${SITE_CONFIG.url}/images/og-image.jpg`, // Pastikan image ini ada
+    image: `${SITE_CONFIG.url}/images/og-image1.jpg`, // Pastikan image ini ada
     description:
       'Perkhidmatan cair limit ShopeePay Later, Grab PayLater, dan Boost PayFlex terpercaya di Malaysia.',
     url: SITE_CONFIG.url,
