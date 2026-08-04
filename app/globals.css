@@ -1,9 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #e11d48; /* Rose-600: Ubah hex ini untuk ganti warna brand */
-  --color-primary-dark: #be123c; /* Rose-700 */
-  --color-secondary: #0f172a; /* Slate-900 */
+  --color-primary: #F5548C;
+  --color-primary-dark: #d93872;
+  --color-primary-light: #f884ad;
+  --color-primary-subtle: #fef0f5;
+  --color-secondary: #0f172a;
+  --color-accent: #ff8fab;
 }
 
 /* Custom Utilities */
@@ -11,10 +14,44 @@
   .container-custom {
     @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
   }
-  
+
   .text-shadow {
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-extrabold text-slate-900 leading-tight;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, #F5548C 0%, #ff8fab 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #F5548C;
+  border-radius: 99px;
 }
 
 html {
@@ -22,5 +59,12 @@ html {
 }
 
 body {
-  @apply bg-slate-50 text-slate-800 antialiased;
+  @apply bg-white text-slate-800 antialiased;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Section divider wave */
+.wave-divider {
+  overflow: hidden;
+  line-height: 0;
 }

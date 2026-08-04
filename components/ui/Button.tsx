@@ -5,7 +5,7 @@ import { ArrowRight } from 'lucide-react';
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   href?: string;
   variant?: 'primary' | 'secondary' | 'outline';
-  size?: 'sm' | 'md' | 'lg'; // <--- TAMBAHAN: Definisi prop size
+  size?: 'sm' | 'md' | 'lg';
   fullWidth?: boolean;
   withIcon?: boolean;
   external?: boolean;
@@ -16,36 +16,34 @@ export default function Button({
   className,
   href,
   variant = 'primary',
-  size = 'md', // <--- TAMBAHAN: Default size
+  size = 'md',
   fullWidth,
   withIcon,
   external,
   ...props
 }: ButtonProps) {
-  // Base styles (padding dipindah ke object sizes)
   const baseStyles =
-    'inline-flex items-center justify-center rounded-full font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none';
+    'inline-flex items-center justify-center rounded-2xl font-semibold transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none';
 
   const variants = {
     primary:
-      'bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary-dark)] focus:ring-[var(--color-primary)] shadow-lg shadow-rose-200',
+      'bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary-dark)] focus:ring-[var(--color-primary)] shadow-lg shadow-[#F5548C]/30 hover:scale-105 hover:shadow-[#F5548C]/40',
     secondary:
-      'bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 hover:border-slate-300 focus:ring-slate-200',
+      'bg-white text-slate-900 border-2 border-slate-200 hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] focus:ring-slate-200',
     outline:
-      'border-2 border-[var(--color-primary)] text-[var(--color-primary)] hover:bg-rose-50',
+      'border-2 border-[var(--color-primary)] text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white focus:ring-[var(--color-primary)]',
   };
 
-  // <--- TAMBAHAN: Definisi style ukuran
   const sizes = {
     sm: 'px-4 py-2 text-sm',
-    md: 'px-8 py-3 text-base',
-    lg: 'px-10 py-4 text-lg',
+    md: 'px-6 py-3 text-base',
+    lg: 'px-8 py-4 text-base',
   };
 
   const combinedClasses = cn(
     baseStyles,
     variants[variant],
-    sizes[size], // <--- Menggunakan size class
+    sizes[size],
     fullWidth && 'w-full',
     className
   );
@@ -70,9 +68,7 @@ export default function Button({
   }
 
   return (
-    <button
-      className={combinedClasses}
-      {...props}>
+    <button className={combinedClasses} {...props}>
       {content}
     </button>
   );

@@ -1,8 +1,8 @@
 export const SITE_CONFIG = {
-  name: 'AinaServices.my',
+  name: 'service.co.nurulaisyah.my',
   description:
     'Tukar limit PayLater atau Kad Kredit kepada wang tunai dengan proses yang mudah, pantas dan selamat.',
-  url: 'https://ainaservices.my',
+  url: 'https://service.co.nurulaisyah.my',
   waNumber: '60173669477', // GANTI NOMOR INI
 };
 
@@ -23,7 +23,7 @@ export const STATS = [
 
 export const ABOUT_CONTENT = {
   title: 'Tentang Kami',
-  text: 'Aina Services MY ialah penyedia perkhidmatan cashout PayLater dan Kad Kredit yang dipercayai di Malaysia. Kami membantu anda menukarkan limit PayLater atau Kad Kredit kepada wang tunai dengan proses yang pantas, mudah & selamat. Kepercayaan pelanggan sentiasa menjadi keutamaan kami. Setiap transaksi diuruskan dengan teliti bagi memastikan proses berjalan lancar, selamat dan memberikan pengalaman terbaik.',
+  text: 'service.co.nurulaisyah.my ialah penyedia perkhidmatan cashout PayLater dan Kad Kredit yang dipercayai di Malaysia. Kami membantu anda menukarkan limit PayLater atau Kad Kredit kepada wang tunai dengan proses yang pantas, mudah & selamat. Kepercayaan pelanggan sentiasa menjadi keutamaan kami. Setiap transaksi diuruskan dengan teliti bagi memastikan proses berjalan lancar, selamat dan memberikan pengalaman terbaik.',
 };
 
 export const WHY_CHOOSE_US = [

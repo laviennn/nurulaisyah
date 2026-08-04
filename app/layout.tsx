@@ -7,7 +7,7 @@ import StructuredData from '@/components/seo/StructuredData'; // Kita buat ini d
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const viewport: Viewport = {
-  themeColor: '#e11d48', // Warna brand di browser mobile
+  themeColor: '#F5548C', // Warna brand di browser mobile
   width: 'device-width',
   initialScale: 1,
 };
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     'kuala lumpur',
     'selangor',
   ],
-  authors: [{ name: 'AinaServices Team', url: SITE_CONFIG.url }],
-  creator: 'AinaServices.my',
-  publisher: 'AinaServices.my',
+  authors: [{ name: 'NurulAisyah Team', url: SITE_CONFIG.url }],
+  creator: 'service.co.nurulaisyah.my',
+  publisher: 'service.co.nurulaisyah.my',
   formatDetection: {
     email: false,
     address: false,
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/og-image1.jpg', // Pastikan buat gambar ukuran 1200x630px di folder public
+        url: '/images/hero1.jpeg', // Pastikan buat gambar ukuran 1200x630px di folder public
         width: 1200,
         height: 630,
         alt: 'Cashout Service Malaysia',
