@@ -21,10 +21,10 @@ export default function Testimonials() {
     (e?: React.MouseEvent) => {
       e?.stopPropagation();
       setSelectedIndex((prev) =>
-        prev === null ? null : (prev + 1) % testimonials.length
+        prev === null ? null : (prev + 1) % testimonials.length,
       );
     },
-    [testimonials.length]
+    [testimonials.length],
   );
 
   const showPrev = useCallback(
@@ -33,10 +33,10 @@ export default function Testimonials() {
       setSelectedIndex((prev) =>
         prev === null
           ? null
-          : (prev - 1 + testimonials.length) % testimonials.length
+          : (prev - 1 + testimonials.length) % testimonials.length,
       );
     },
-    [testimonials.length]
+    [testimonials.length],
   );
 
   // Handle Keyboard Event (Esc, Left, Right)
@@ -91,7 +91,7 @@ export default function Testimonials() {
             </div>
 
             <Image
-              src={`/images/testimoni/testi-${id}.jpeg`}
+              src={`/images/testimoni/testimoni-${id}.jpeg`}
               alt={`Testimoni Pelanggan ${id}`}
               fill
               className='object-cover transition-transform duration-500 group-hover:scale-105'
