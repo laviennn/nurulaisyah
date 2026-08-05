@@ -6,7 +6,7 @@ export const SITE_CONFIG = {
   waNumber: '60175567502', // GANTI NOMOR INI
 };
 
-export const WA_LINK = `https://wa.me/${SITE_CONFIG.waNumber}?text=Halo%20Admin,%20saya%20berminat%20tukar%20limit%20jadi%20tunai.`;
+export const WA_LINK = `https://wa.me/${SITE_CONFIG.waNumber}?text=Halo%20Sis,%20saya%20nak%20cashout.`;
 
 export const HERO_CONTENT = {
   headline:
