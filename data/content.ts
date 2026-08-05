@@ -3,13 +3,14 @@ export const SITE_CONFIG = {
   description:
     'Tukar limit PayLater atau Kad Kredit kepada wang tunai dengan proses yang mudah, pantas dan selamat.',
   url: 'https://service.co.nurulaisyah.my',
-  waNumber: '60173669477', // GANTI NOMOR INI
+  waNumber: '60175567502', // GANTI NOMOR INI
 };
 
 export const WA_LINK = `https://wa.me/${SITE_CONFIG.waNumber}?text=Halo%20Admin,%20saya%20berminat%20tukar%20limit%20jadi%20tunai.`;
 
 export const HERO_CONTENT = {
-  headline: 'Tukar Limit PayLater atau Kad Kredit Kepada Wang Tunai Dengan Mudah, Pantas & Selamat',
+  headline:
+    'Tukar Limit PayLater atau Kad Kredit Kepada Wang Tunai Dengan Mudah, Pantas & Selamat',
   subheadline:
     'Perlukan wang tunai dengan segera? Kami sedia membantu anda menukarkan limit PayLater atau Kad Kredit kepada wang tunai dengan proses yang mudah, pantas dan selamat.',
   cta: 'Tukar Sekarang!',

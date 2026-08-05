@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils';
 
 export default function Testimonials() {
   // Mock data placeholders (1 s/d 6)
-  const testimonials = [1, 2, 3, 4];
+  const testimonials = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
   // State untuk menyimpan index gambar yang sedang dibuka (null = tertutup)
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
@@ -137,7 +137,7 @@ export default function Testimonials() {
               onClick={(e) => e.stopPropagation()} // Mencegah klik pada gambar menutup lightbox
             >
               <Image
-                src={`/images/testimoni/testi-${testimonials[selectedIndex]}.jpeg`}
+                src={`/images/testimoni/testimoni-${testimonials[selectedIndex]}.jpeg`}
                 alt='Testimoni Fullscreen'
                 fill
                 className='object-contain'
